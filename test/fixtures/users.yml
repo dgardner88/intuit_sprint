@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  [name: 
+  pic_url: 
+  free_money: 
+  invested_money: 
+  analytics_url: 
+
+two:
+  [name: 
+  pic_url: 
+  free_money: 
+  invested_money: 
+  analytics_url: 

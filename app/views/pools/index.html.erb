@@ -1,0 +1,31 @@
+<h1>Listing pools</h1>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Free money</th>
+    <th>Invested money</th>
+    <th>Return rate</th>
+    <th>Analytics url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pools.each do |pool| %>
+  <tr>
+    <td><%= pool.category %></td>
+    <td><%= pool.free_money %></td>
+    <td><%= pool.invested_money %></td>
+    <td><%= pool.return_rate %></td>
+    <td><%= pool.analytics_url %></td>
+    <td><%= link_to 'Show', pool %></td>
+    <td><%= link_to 'Edit', edit_pool_path(pool) %></td>
+    <td><%= link_to 'Destroy', pool, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pool', new_pool_path %>

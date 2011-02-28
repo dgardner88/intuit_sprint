@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>category:</b>
+  <%= @pool.category %>
+</p>
+
+<p>
+  <b>Free money:</b>
+  <%= @pool.free_money %>
+</p>
+
+<p>
+  <b>Invested money:</b>
+  <%= @pool.invested_money %>
+</p>
+
+<p>
+  <b>Return rate:</b>
+  <%= @pool.return_rate %>
+</p>
+
+<p>
+  <b>Analytics url:</b>
+  <%= @pool.analytics_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_pool_path(@pool) %> |
+<%= link_to 'Back', pools_path %>

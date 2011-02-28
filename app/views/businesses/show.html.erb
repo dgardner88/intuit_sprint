@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>user:</b>
+  <%= @business.user_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @business.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @business.description %>
+</p>
+
+<p>
+  <b>Video url:</b>
+  <%= @business.video_url %>
+</p>
+
+<p>
+  <b>Photo url:</b>
+  <%= @business.photo_url %>
+</p>
+
+<p>
+  <b>Funding target:</b>
+  <%= @business.funding_target %>
+</p>
+
+<p>
+  <b>Attachment url:</b>
+  <%= @business.attachment_url %>
+</p>
+
+<p>
+  <b>Votes:</b>
+  <%= @business.votes %>
+</p>
+
+
+<%= link_to 'Edit', edit_business_path(@business) %> |
+<%= link_to 'Back', businesses_path %>
