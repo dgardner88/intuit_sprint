@@ -7,7 +7,7 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
 Business.create([{ :user_id => 1, :title => 'Mike\'s Mongolian Barbeque',:funding_target => 21000.46}])
-Business.create([{ :user_id => 2, :title => 'Ike\'s Italian Barbeque', :funding_target => 6000.46}])
+Business.create([{ :user_id => 2, :title => 'Ike\'s Italian Barbeque', :funding_target => 6000.46, :video_url => 'a1Y73sPHKxw'}])
 
 User.create([{ :name => 'Mike'}])
 User.create([{ :name => 'John', :free_money => 150, :invested_money => 3000.30}])

@@ -55,6 +55,7 @@ html, body {
 #body_div{
   margin: 0 auto;
   width:900px;
+  padding-top:10px;
 }
 
 #main{
@@ -66,4 +67,24 @@ html, body {
 
 h1{
   font-size:25px;
+}
+
+/* === Business Profile Page ===*/
+
+#video_box{
+  width:500px;
+  height:400px;
+  float:left;
+}
+
+#business_info_box{
+  width:360px;
+  height:360px;
+  float:left;
+  padding:15px;
+  background-color:#EDEDED;
+}
+
+#business_description{
+  width:100%;
 }

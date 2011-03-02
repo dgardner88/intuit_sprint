@@ -1,23 +1,38 @@
 <p id="notice"><%= notice %></p>
 
+
+<h1><%= @business.title %></h1>
+<br />
+<div id="video_box">
+  <iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/<%= @business.video_url %>" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div id="business_info_box">
+  <span style="font-weight:bold; font-size:15px;">Funding Target:</span> <%= @business.funding_target %>
+  <br />
+  <br />
+  <%= @business.description %>
+</div>
+
+<br />
+<br />
+<div id="business_description">
+
 <p>
   <b>user:</b>
   <%= @business.user_id %>
 </p>
 
-<p>
-  <b>Title:</b>
-  <%= @business.title %>
-</p>
+
 
 <p>
   <b>Description:</b>
-  <%= @business.description %>
+  
 </p>
 
 <p>
   <b>Video url:</b>
-  <%= @business.video_url %>
+  
 </p>
 
 <p>
@@ -27,7 +42,7 @@
 
 <p>
   <b>Funding target:</b>
-  <%= @business.funding_target %>
+  
 </p>
 
 <p>
@@ -39,6 +54,7 @@
   <b>Votes:</b>
   <%= @business.votes %>
 </p>
+</div>
 
 
 <%= link_to 'Edit', edit_business_path(@business) %> |

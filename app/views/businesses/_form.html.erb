@@ -10,31 +10,30 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :user_id %><br />
-    <%= f.text_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </div>
-  <div class="field">
-    <%= f.label :video_url %><br />
-    <%= f.text_field :video_url %>
-  </div>
-  <div class="field">
-    <%= f.label :photo_url %><br />
-    <%= f.text_field :photo_url %>
-  </div>
-  <div class="field">
-    <%= f.label :funding_target %><br />
-    <%= f.text_field :funding_target %>
-  </div>
+  
+  <br />
+  <table border="0">
+    <tr>
+    <td><%= f.label :user_id %>:</td>
+    <td><%= f.text_field :user_id %></td>
+    </tr>
+    <tr>
+    <td>Business Title:</td>
+    <td><%= f.text_field :title %></td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    <td><%= f.label :funding_target %>:</td>
+    <td><%= f.text_field :funding_target %></td>
+    </tr>
+    
+  </table>
+  <br />
+  <%= f.label :description %>:<br />
+  <%= f.text_area :description,  :cols => 38, :rows => 10%>
+    
+    
   <div class="field">
     <%= f.label :attachment_url %><br />
     <%= f.text_field :attachment_url %>
