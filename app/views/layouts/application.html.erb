@@ -7,8 +7,16 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="header">
+    <div id="header_div">
+        <span id="header_leftside">invest<span style="color:#5995E3">r</span></span>
+        <span id="header_rightside">Home | Gallery | OMG | Login</span>
+    </div>
+  </div>
+  <div id="header_shadow"></div>
+  <div id="body_div">
+  <!--=======PAGE CONTENT GOES IN HERE========-->
+  <%= yield %>
+  <!-- ========END PAGE CONTENT ==========-->
 </body>
 </html>
