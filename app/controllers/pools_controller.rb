@@ -6,7 +6,7 @@ class PoolsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @pools }
+      format.json  { render :json => @pools }
     end
   end
 

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: MyString
+  pool_id: MyString
+  investment_amount: 9.99
+
+two:
+  user_id: MyString
+  pool_id: MyString
+  investment_amount: 9.99

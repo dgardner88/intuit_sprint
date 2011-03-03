@@ -28,7 +28,7 @@ class BusinessesController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @business }
+      format.json  { render :json => @business }
     end
   end
 

@@ -1,4 +1,6 @@
 IntuitSprint::Application.routes.draw do
+  resources :transactions
+
   resources :pools
 
   resources :users

@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
-  has_and_belongs_to_many :pools
+  has_many :transactions
+  has_many :pools, :through => :transactions
   has_many :businesses
 end
